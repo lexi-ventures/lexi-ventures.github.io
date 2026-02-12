@@ -18,14 +18,16 @@
         .accent-bg { background-color: #590d2e; }
         .accent-border { border-color: #590d2e; }
 
-        /* Animation for graphic - INCREASED MOTION */
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-25px); }
-            100% { transform: translateY(0px); }
+        /* Animation for graphic - CIRCULAR MOTION */
+        @keyframes circular-float {
+            0% { transform: translate(0px, 0px); }
+            25% { transform: translate(20px, -10px); }
+            50% { transform: translate(0px, -25px); }
+            75% { transform: translate(-20px, -10px); }
+            100% { transform: translate(0px, 0px); }
         }
         .animate-float {
-            animation: float 5s ease-in-out infinite;
+            animation: circular-float 8s ease-in-out infinite;
         }
     </style>
 </head>
@@ -47,7 +49,7 @@
         
         <div class="z-10">
             <h1 class="font-heading text-5xl md:text-7xl font-bold mb-6 leading-[1.1]">
-                Biology is the new <br/>
+                Biology is <br/>
                 <span class="accent-text">software.</span>
             </h1>
             <p class="font-body text-xl text-gray-700 mb-8 font-light leading-relaxed text-left">
@@ -65,10 +67,10 @@
             
             <div class="text-left z-10">
                 <p class="font-heading text-2xl md:text-3xl leading-relaxed text-gray-900 mb-8 font-medium">
-                    We believe the coming revolution in genetics will be one of the most <span class="text-[#590d2e]">valuable venture categories</span> in the next decade.
+                    We believe the coming revolution in genetics will be one of the most <span class="text-[#590d2e]">value-creating venture categories</span> in the next decade.
                 </p>
                 <p class="font-body text-lg text-gray-800 leading-loose mb-8">
-                    Gene tech startups aim to cure many of the most agonizing and expensive diseases, improving happiness and reducing healthcare needs. Other gene tech startups will enable plants and microbes to produce newer and better things while sustaining the natural environment.
+                    Gene tech startups aim to cure many of the most agonizing and expensive diseases, improving happiness and reducing healthcare needs. Other gene tech startups will enable plants and microbes to produce new and better products while sustaining the natural environment.
                 </p>
             </div>
 
