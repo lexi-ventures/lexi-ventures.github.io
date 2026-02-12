@@ -18,7 +18,7 @@
         .accent-bg { background-color: #590d2e; }
         .accent-border { border-color: #590d2e; }
 
-        /* Animation for graphic - CIRCULAR MOTION */
+        /* Animation for graphic - CIRCULAR MOTION (15s) */
         @keyframes circular-float {
             0% { transform: translate(0px, 0px); }
             25% { transform: translate(20px, -10px); }
@@ -27,8 +27,17 @@
             100% { transform: translate(0px, 0px); }
         }
         .animate-float {
-            /* SLOWED DOWN from 12s to 15s */
             animation: circular-float 15s ease-in-out infinite;
+        }
+
+        /* NEW Animation: Fade In for Hero Text */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out forwards;
+            opacity: 0; /* Start invisible so it can fade in */
         }
     </style>
 </head>
@@ -48,7 +57,7 @@
 
     <header class="w-full max-w-7xl mx-auto px-6 py-16 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative">
         
-        <div class="z-10">
+        <div class="z-10 animate-fade-in">
             <h1 class="font-heading text-5xl md:text-7xl font-bold mb-6 leading-[1.1]">
                 Biology is <br/>
                 <span class="accent-text">software.</span>
@@ -71,7 +80,7 @@
                     We believe the coming revolution in genetics will be one of the most <span class="text-[#590d2e]">value-creating venture categories</span> in the next decade.
                 </p>
                 <p class="font-body text-lg text-gray-800 leading-loose mb-8">
-                    Gene tech startups aim to cure many of the worst and most expensive diseases, improving happiness and reducing healthcare needs. Other gene tech startups will enable plants and microbes to produce new and better products while sustaining the natural environment.
+                    Gene tech startups aim to cure many of the worst and most expensive diseases, improving happiness and reducing healthcare needs. Other gene tech startups will enable plants and microbes to produce new kinds of products while sustaining the natural environment.
                 </p>
             </div>
 
@@ -245,7 +254,7 @@
                 <h2 class="font-heading text-3xl font-bold mb-1">Jonah Probell</h2>
                 <p class="text-[#590d2e] font-body font-bold text-sm mb-6 uppercase tracking-wider">Founder & Managing Partner</p>
                 <p class="font-body text-lg text-gray-700 mb-6 leading-relaxed">
-                    Before founding Lexi Ventures, Jonah held founder, executive, and engineering roles in 7 startups. He achieved 2 IPOs, 16 granted patents and wrote 2 books. He has a lifelong interest in science, engineering, economics, philosophy, and innovation.
+                    Before founding Lexi Ventures, Jonah held founder, executive, and engineering roles in 7 startups over 25 years. He achieved 2 IPOs, 16 granted patents and wrote 2 books. He has a lifelong interest in science, engineering, economics, philosophy, and innovation.
                 </p>
 
                 <div class="flex justify-start gap-12 border-t border-gray-200/50 pt-6">
