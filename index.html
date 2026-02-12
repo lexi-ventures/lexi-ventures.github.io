@@ -18,14 +18,14 @@
         .accent-bg { background-color: #590d2e; }
         .accent-border { border-color: #590d2e; }
 
-        /* Animation for graphic */
+        /* Animation for graphic - INCREASED MOTION */
         @keyframes float {
             0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
+            50% { transform: translateY(-25px); } /* Increased from -10px */
             100% { transform: translateY(0px); }
         }
         .animate-float {
-            animation: float 6s ease-in-out infinite;
+            animation: float 5s ease-in-out infinite; /* Sped up slightly from 6s */
         }
     </style>
 </head>
@@ -247,16 +247,16 @@
 
                 <div class="flex justify-start gap-12 border-t border-gray-200/50 pt-6">
                     <div>
-                        <div class="font-heading text-3xl font-bold text-[#590d2e]">2</div>
-                        <div class="text-[10px] text-gray-500 font-bold uppercase">IPOs</div>
+                        <div class="font-heading text-3xl font-bold text-[#590d2e]">25</div>
+                        <div class="text-[10px] text-gray-500 font-bold uppercase">Years</div>
                     </div>
                     <div>
                         <div class="font-heading text-3xl font-bold text-[#590d2e]">7</div>
                         <div class="text-[10px] text-gray-500 font-bold uppercase">Startups</div>
                     </div>
                     <div>
-                        <div class="font-heading text-3xl font-bold text-[#590d2e]">25</div>
-                        <div class="text-[10px] text-gray-500 font-bold uppercase">Years</div>
+                        <div class="font-heading text-3xl font-bold text-[#590d2e]">2</div>
+                        <div class="text-[10px] text-gray-500 font-bold uppercase">IPOs</div>
                     </div>
                 </div>
             </div>
@@ -265,6 +265,7 @@
 
     <section id="connect" class="w-full py-20 px-6 bg-gray-200 relative z-10">
         <div class="max-w-4xl mx-auto text-center">
+            
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 
                 <a href="https://lexiventures.substack.com/" target="_blank" class="flex items-center justify-center gap-2 bg-white px-4 py-4 rounded border border-[#FF6719]/30 text-[#FF6719] hover:bg-[#FF6719] hover:text-white shadow-sm hover:shadow-md transition-all">
